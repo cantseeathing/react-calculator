@@ -1,38 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fuggles&family=Montserrat&family=Press+Start+2P&family=Ubuntu&display=swap");
+
+html {
+  background-color: #22092c;
+  font-family: "Press Start 2P" !important;
+}
+
 .App {
-  text-align: center;
+  width: 25rem;
+  height: min-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition-duration: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.screen {
+  width: 99.5%;
+  height: 10rem;
+  border: 2px solid black;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  display: grid;
+  align-items: end;
+  text-align: right;
+  background-color: #be3144;
   color: white;
+  container-type: inline-size;
+  &:hover {
+    cursor: grab;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+.previous-operations {
+  font-size: 20px;
+  align-self: center;
+  padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.current-operation {
+  font-size: 10cqw;
+  font-weight: bolder;
+  padding: 10px;
+  height: 3rem;
 }

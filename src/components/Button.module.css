@@ -1,0 +1,38 @@
+.calculatorBody {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  transition-property: 500ms;
+}
+
+.button {
+  padding: 10px;
+  width: inherit;
+  height: inherit;
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: "Press Start 2P" !important;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.oneSlot {
+  background-color: #f05941;
+  transition-duration: 100ms;
+  &:hover {
+    background-color: #be3144;
+  }
+}
+
+.twoSlots {
+  grid-column: span 2;
+  background-color: #872341;
+  transition-duration: 100ms;
+  color: white;
+  &:hover {
+    background-color: #be3144;
+  }
+}
